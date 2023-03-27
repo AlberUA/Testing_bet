@@ -1,0 +1,2673 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <!--<link rel="icon" href="./favicon.ico">-->
+
+    <title>Table page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+          rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white-with-bg">
+        <div class="container-fluid">
+            <div class="left-block_sidebar">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="./icon/logo.svg"/>
+                </a>
+
+                <button type="button" id="sidebarCollapse" class="btn btn-white">
+                    <img src="./icon/burger.svg"/>
+                    <span>Чемпионаты</span>
+                </button>
+            </div>
+
+
+            <div class="navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item  football">
+                        <a href="./football.html" class="nav-link">
+                            <img src="./icon/football.svg"/>
+                            Футбол<span class="top-timer">14 дней</span></a>
+                    </li>
+                    <li class="nav-item active basket">
+                        <a href="./basket.html" class="nav-link">
+                            <img src="./icon/basket.svg"/>
+                            Баскетбол<span class="top-timer">14 дней</span></a>
+                    </li>
+                    <li class="nav-item  hockey">
+                        <a href="./hockey.html" class="nav-link">
+                            <img src="./icon/hockey.svg"/>
+                            Хоккей
+                            <span class="top-lock">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!--Продлить подписку-->
+            <a href="./home-pay.html" class="pay-add">Продлить подписку</a>
+            <a href="#" class="sound sound-muted"></a>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="account-info" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">AH</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="account-info">
+                    <a href="./home-pay.html" class="pay-add">Продлить подписку</a>
+
+                    <a class="dropdown-item" href="#">
+                        <img src="./icon/setting.svg"/>
+                        Настройки</a>
+                    <a class="dropdown-item security" href="#">
+                        <img src="./icon/security.svg"/>
+                        Безопасность</a>
+                    <a href="#" class="sound">
+                        Сигналы
+                        <span class="right">Включены</span>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#">
+                        <img src="./icon/faq.svg"/>
+                        Помощь</a>
+                    <a class="dropdown-item" href="#">
+                        <img src="./icon/exit.svg"/>
+                        Выйти</a>
+                </div>
+            </div>
+            <!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--            <span class="navbar-toggler-icon"></span>-->
+            <!--        </button>-->
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="bg-grey2 table">
+
+    <nav id="sidebar">
+
+        <div class="left-filter__sidebar-header">
+            <div class="form-group has-search">
+                <span class="fa fa-search2"></span>
+                <input type="text" class="form-control" placeholder="Поиск">
+            </div>
+        </div>
+
+        <div class="container filter__list">
+            <div class="left-filter__list">
+                <div class="card-header">
+                    <div class="list-all">
+                        <label class="form-check-label" for="masterCheck">
+                            <div class="left">
+                                <img src="./icon/all-32.svg"/>
+                                Выбрать все
+                            </div>
+                            <div class="right">
+                                <span class="count all">32</span>
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="selectAll"
+                                        id="masterCheck"
+                                >
+                            </div>
+
+                        </label>
+
+                    </div>
+                </div>
+                <div class="left-filter__list">
+                    <div class="left-filter__list ps ps--active-y">
+                        <div class="left-filter__item ">
+                            <span role="button" tabindex="0"
+                                  class="left-filter__item-arrow"></span>
+                            <label class="left-filter__item-name" for="item1">
+                                <div class="center">
+                                    <span>Албания Первый Дивизион</span>
+                                </div>
+                                <div class="right">
+                                    <span class="left-filter__item-count">9</span>
+                                    <input id="item1" type="checkbox" aria-label="checkbox">
+                                </div>
+                            </label>
+                            <div class="list__left-filter__item_sub">
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_1"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_1" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_2"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_2" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_3"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_3" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_4"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_4" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_5"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_5" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_6"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_6" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_7"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_7" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_8"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_8" aria-label="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="left-filter__item ">
+                            <span role="button" tabindex="0"
+                                  class="left-filter__item-arrow"></span>
+                            <label class="left-filter__item-name" for="item2">
+                                <div class="center">
+                                    <span>Албания Первый Дивизион</span>
+                                </div>
+                                <div class="right">
+                                    <span class="left-filter__item-count">9</span>
+                                    <input id="item2" type="checkbox" aria-label="checkbox">
+                                </div>
+                            </label>
+                            <div class="list__left-filter__item_sub">
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_1"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_1" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_2"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_2" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_3"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_3" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_4"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_4" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_5"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_5" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_6"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_6" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_7"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_7" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_8"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_8" aria-label="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="left-filter__item ">
+                            <span role="button" tabindex="0"
+                                  class="left-filter__item-arrow"></span>
+                            <label class="left-filter__item-name" for="item3">
+                                <div class="center">
+                                    <span>Албания Первый Дивизион</span>
+                                </div>
+                                <div class="right">
+                                    <span class="left-filter__item-count">9</span>
+                                    <input id="item3" type="checkbox" aria-label="checkbox">
+                                </div>
+                            </label>
+                            <div class="list__left-filter__item_sub">
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_1"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_1" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_2"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_2" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_3"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_3" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_4"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_4" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_5"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_5" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_6"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_6" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_7"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_7" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_8"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_8" aria-label="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="left-filter__item ">
+                            <span role="button" tabindex="0"
+                                  class="left-filter__item-arrow"></span>
+                            <label class="left-filter__item-name" for="item4">
+                                <div class="center">
+                                    <span>Албания Первый Дивизион</span>
+                                </div>
+                                <div class="right">
+                                    <span class="left-filter__item-count">9</span>
+                                    <input id="item4" type="checkbox" aria-label="checkbox">
+                                </div>
+                            </label>
+                            <div class="list__left-filter__item_sub">
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_1"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_1" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_2"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_2" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_3"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_3" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_4"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_4" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_5"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_5" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_6"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_6" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_7"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_7" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_8"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_8" aria-label="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="left-filter__item ">
+                            <span role="button" tabindex="0"
+                                  class="left-filter__item-arrow"></span>
+                            <label class="left-filter__item-name" for="item5">
+                                <div class="center">
+                                    <span>Албания Первый Дивизион</span>
+                                </div>
+                                <div class="right">
+                                    <span class="left-filter__item-count">9</span>
+                                    <input id="item5" type="checkbox" aria-label="checkbox">
+                                </div>
+                            </label>
+                            <div class="list__left-filter__item_sub">
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_1"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_1" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_2"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_2" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_3"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_3" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_4"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_4" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_5"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_5" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_6"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_6" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_7"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_7" aria-label="checkbox">
+                                    </div>
+                                </div>
+                                <div class="left-filter__item_sub">
+                            <span class="left-filter__item-name-text">
+                               <label class="left-filter__sub-item-name link top"
+                                      data-tooltip="Беса – Аполония Фиери2" data-position="top" for="item1_8"><span> Беса – Аполония Фиери</span>
+                              </label>
+                            </span>
+                                    <div class="item">
+                                        <input type="checkbox" id="item1_8" aria-label="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="list-unstyled CTAs">
+            <li class="padding-22">
+                <button href="#" class="clear btn-white-clear w-100">Cбросить</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content" class="container-fluid">
+
+        <div class="top-banner">
+            <a href="#">
+                <img src="./image/ban-top.jpg">
+            </a>
+        </div>
+
+        <div class="padding-20 bg-white hockey">
+            <div class="col-md-12">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="all_match" data-toggle="pill" href="#all_match">Все матчи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="live_match" data-toggle="pill" href="#live">Live <span class="table__nav-link count">12</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="favorite_match" data-toggle="pill" href="#favorite">Избранные <span class="table__nav-link count">3</span></a>
+                    </li>
+
+                    <li class="right-bar ml-auto">
+                        <div class="date-dropdown">
+                            <a class="date-item dropdown-toggle" href="#" id="date" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <img src="./icon/calendar.svg" />
+                                02.01.2023</a>
+                            <div class="dropdown-menu" aria-labelledby="date">
+                                <div class="list">
+                                    <div class="list-header">
+                                        <label class="form-all-input" for="all_date">
+                                            <input class="form-all-input" type="checkbox" value="selectAll" id="all_date">
+                                            Выбрать все
+                                        </label>
+                                    </div>
+                                    <div class="list-all">
+                                        <div class="date list-all">
+
+
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+
+
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_date2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">31.01.2023</span>
+                                                </div>
+                                                <div class="right">
+                                                    Cегодня
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="list-botton-clean">
+                                        <button href="#" class="clear btn-white-clear w-100">Cбросить</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="time-dropdown">
+                            <a class="time-item dropdown-toggle" href="#" id="time" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <img src="./icon/oclock.svg" />
+                                Любое время</a>
+                            <div class="dropdown-menu" aria-labelledby="time">
+                                <div class="list">
+                                    <div class="list-header">
+                                        <label class="form-all-input" for="all_time">
+                                            <input class="form-all-input" type="checkbox" value="selectAll" id="all_time">
+                                            Любое время
+                                        </label>
+                                    </div>
+                                    <div class="list-all">
+                                        <div class="time list-all">
+
+
+                                            <label class="form-date-input" for="all_time2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">00:00</span>
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_time2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">00:00</span>
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_time2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">00:00</span>
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_time2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">00:00</span>
+                                                </div>
+                                            </label>
+                                            <label class="form-date-input" for="all_time2">
+                                                <div class="left">
+                                                    <input class="form-date-checkbox" type="checkbox" value="selectAll" id="all_date2">
+                                                    <span class="count all">00:00</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="list-botton-clean">
+                                        <button href="#" class="clear btn-white-clear w-100">Cбросить</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!--                      change basket-live-->
+                    <table class="hockey">
+
+                        <tbody>
+                        <tr>
+                            <td class="f11 bold black" colspan="4">Cобытие</td>
+
+                            <td class="f11 bold black column-veroyatn hockey_h" colspan="4">Вероятность</td>
+                            <td class="f11 bold black column-veroyatn basket_h " colspan="6">Вероятность</td>
+                            <td class="f11 bold black column-veroyatn basket_live hockey_live" colspan="2">Вероятность</td>
+                            <td class="f11 bold black column-veroyatn football_h football_live" colspan="5">Вероятность</td>
+
+                            <td class="f11 bold black column-live basket_live football_live hockey_live" colspan="3">Лайв</td>
+
+                            <td class="f11 bold black column-otkl basket_live" colspan="7">Отклонение</td>
+                            <td class="f11 bold black column-otkl hockey_live football_live" colspan="4">Отклонение</td>
+
+                            <td class="f11 bold black column-prognoz bg-yellow basket_h basket_live" colspan="6">Прогноз</td>
+                            <td class="f11 bold black bg-grey column-prognoz football_h football_live hockey_h hockey_live" colspan="7">Прогноз</td>
+
+                            <td class="f11 bold black column-koeff football basket hokey football_live basket_live hockey_live" colspan="3">Коэффициент</td>
+                        </tr>
+                        <tr>
+                            <td class="f11 bold c707 w50 active  column-date">Дата<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w60 column-time">Время<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w_max-content m_w160 column-chemp">Чемпионат<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w_max-content m_w160 column-match">Матч<span class="down"><img src="icon/down2.svg"/></span></td>
+
+                            <!--    all match basket+hokey -->
+                            <td class="f11 bold c707 text-center w25 column-p1-h">П1<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <!--    end match basket+hokey -->
+
+                            <!--    football-->
+                            <td class="f11 bold c707 text-center w25 column-x-f">Х<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <!--    end football-->
+
+                            <!--    all match basket+hokey -->
+                            <td class="f11 bold c707 text-center w25 column-p2-h">П2<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <!--    end match basket+hokey -->
+
+                            <!--   bask live -->
+                            <td class="f11 bold c707 w50 text-center column-chetv column-live">Четв.</td>
+                            <!--  bask end live -->
+
+                            <!--    football-->
+                            <td class="f11 bold c707 text-center w25 column-tb-f">ТБ<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 text-center w25 column-tm-f">ТМ<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <!--    end football-->
+
+                            <!--      footb        live  -->
+                            <td class="f11 bold c707 text-center w40 column-min column-live">Мин.</td>
+                            <!--     end footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="f11 bold c707 text-center w100 column-per column-live">Пер.</td>
+                            <!-- end hokey   live-->
+
+                            <!--   all live -->
+                            <td class="f11 bold c707 bg-yellow w25 text-center column-schet column-live">Счёт</td>
+                            <!--   all end live -->
+
+                            <!--  bask live -->
+                            <td class="f11 bold c707 w100 text-center column-chetvert column-live">Четверти</td>
+                            <!--  bask end live -->
+
+                            <!--    basket-->
+
+                            <td class="f11 bold c707 w60 text-center column-total column-live">Тотал<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w60 text-center column-it1 column-live">ИТ1<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w60 text-center column-it2 column-live">ИТ2<span class="down"><img src="icon/down2.svg"/></span></td>
+
+
+
+                            <td class="f11 bold c707 w60 text-center column-total-full">Тотал<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w50 text-center column-buk">БУК<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w70 text-center column-raznica">Разница<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 w25 text-center column-1h">1Ч<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <!--    basket-->
+
+
+
+
+<!--                            &lt;!&ndash;   all live &ndash;&gt;-->
+<!--                            <td class="f11 bold c707 bg-yellow w25 text-center column-schet column-live">Счёт</td>-->
+<!--                            &lt;!&ndash;   all end live &ndash;&gt;-->
+
+                            <!--    live -->
+
+
+
+
+
+                            <!--      footb        live  -->
+                            <td class="f11 bold c707 text-center w25 column-timy column-live">Таймы</td>
+                            <!--         footb    end live  -->
+
+                            <!-- hokey   live-->
+                            <td class="f11 bold c707 text-center w100 column-period column-live">Периоды</td>
+                            <!--   end hokey live-->
+
+                            <!--         footb    end live  -->
+                            <td class="f11 bold c707 text-center w70 column-1t-tb-05 column-live">1Т ТБ 0.5</td>
+                            <td class="f11 bold c707 text-center w70 column-tb-25 column-live">ТБ 2.5</td>
+                            <td class="f11 bold c707 text-center w70 column-tb-15 column-live">ТБ 1.5</td>
+                            <td class="f11 bold c707 text-center w70 column-tb-05 column-live">ТБ 0.5</td>
+                            <!--         footb    end live  -->
+
+                            <td class="f11 bold c707 text-center w70 column-2p-tb-5 column-live">2п ТБ 0.5</td>
+                            <td class="f11 bold c707 text-center w70 column-3p-tb-5 column-live">3п ТБ 0.5</td>
+                            <!--   end hokey live-->
+
+                            <td class="f11 bold c707 text-center w25 column-tb-h">ТБ<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 text-center w25 column-tm-h">ТМ<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <!--    live -->
+
+
+                            <td class="f11 bold c707 bg-grey text-center w40 column-1x2">1Х2<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 bg-grey text-center w40 column-1x22">1Х2<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 bg-grey text-center w40 column-tc">ТС<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 bg-grey text-center w40 column-tc">ТС<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 bg-grey text-center w40 column-oz">ОЗ<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 bg-grey text-center w50 column-it1k">ИТ1К<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 bg-grey text-center w50 column-it2k">ИТ2К<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 text-center w25 column-p1">П1<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 text-center w25 column-x">Х<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="f11 bold c707 text-center w25 column-p2">П2<span class="down"><img src="icon/down2.svg"/></span></td>
+                            <td class="text-center w25 column-fav"><img src="icon/fav.svg" /></td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+<!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+<!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+<!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr class="favorite-selected">
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        <tr>
+                            <td class="column-date">02.01.23</td>
+                            <td class=" column-time">16:30</td>
+                            <td class="column-chemp">Австрия Bundesliga - Тур 13</td>
+                            <td class="column-match">Беса – Аполония Фиери<span class="live"></span></td>
+                            <td class="column-p1-h grey text-center"><span>29%</span></td>
+
+                            <td class="column-x-f grey text-center"><span>51%</span></td>
+
+                            <td class="column-p2-h grey text-center"><span>29%</span></td>
+                            <!--//ffotball-->
+                            <td class="column-tb-f text-center"><span>2.44</span></td>
+
+                            <td class="column-tm-f green text-center"><span>3</span></td>
+
+                            <td class="column-chetv column-live c-yellow text-center">3ч. 4’</td>
+
+                            <td class="column-min column-live c-red bold text-center"><span>43’</span></td>
+
+                            <!-- hokey   live-->
+                            <td class="column-per column-live c-yellow text-center"><span>2п. 10’</span></td>
+                            <!-- end hokey   live-->
+
+                            <td class="column-schet column-live bg-yellow text-center bold">
+                                <div class="column-1">
+                                    <span>32</span>
+                                    <span>76</span>
+                                </div>
+                            </td>
+
+                            <td class="column-chetvert column-live text-center">
+                                <div class="column-4">
+                                    <span>0</span><span>0</span><span>0</span><span>0</span>
+                                    <span>0</span><span>1</span><span>0</span><span> </span>
+                                </div>
+                            </td>
+
+                            <td class="column-total  column-live c-red bold text-center">-1</td>
+                            <td class="column-it1 column-live c-red bold text-center">-5</td>
+                            <td class="column-it2 column-live c-green bold text-center">+7</td>
+
+
+                            <td class="column-total-full text-center">175.5</td>
+
+                            <td class="column-buk text-center"></td>
+
+                            <td class="column-raznica grey green text-center"><span>10.2</span></td>
+
+
+                            <!--                            <td class="column-tb-f text-center"><span>2.44</span></td>-->
+
+                            <!--                            <td class="column-tm-f green text-center"><span>3</span></td>-->
+
+
+
+                            <!--    column-min column-live-->
+
+
+                            <!--      footb        live  -->
+                            <td class="column-timy column-live text-center">
+                                <div class="column-2">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                </div>
+                            </td>
+                            <!--      footb        live  -->
+
+                            <!-- hokey   live-->
+                            <td class="column-period column-live text-center">
+                                <div class="column-3">
+                                    <span>0</span><span>0</span>
+                                    <span>0</span><span>1</span>
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <!--   end hokey live-->
+
+                            <!--      footb        live  -->
+                            <td class="column-1t-tb-05 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-25 column-live text-center"> </td>
+                            <td class="column-tb-15 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-tb-05 column-live text-center"> </td>
+                            <!--         footb    end live  -->
+
+
+                            <!-- hokey   live-->
+                            <td class="column-2p-tb-5 column-live text-center"><img src="icon/select.svg" /></td>
+                            <td class="column-3p-tb-5 column-live text-center"> </td>
+                            <!--   end hokey live-->
+
+
+
+
+
+
+                            <td class="column-1h text-center">54.4</td>
+
+                            <td class="column-tb-h green text-center"><span>6.25</span></td>
+                            <td class="column-tm-h grey text-center"><span>6.25</span></td>
+
+                            <!--prognoz-->
+                            <td class="column-1x2 bg-yellow text-center">П1</td>
+                            <td class="column-1x22 bg-yellow text-center">К1</td>
+                            <td class="column-tc bg-yellow text-center">2</td>
+                            <td class="column-tc bg-yellow text-center">1</td>
+                            <td class="column-oz bg-grey text-center">Да</td>
+                            <td class="column-it1k grey bg-yellow text-center"><span>1,7</span></td>
+                            <td class="column-it2k grey bg-yellow text-center"><span>1,5</span></td>
+                            <td class="column-p1 text-center text-center">3.76</td>
+                            <td class="column-x text-center text-center">2.24</td>
+                            <td class="column-p2 text-center text-center">2.05</td>
+                            <td class="column-fav text-center "><img src="icon/fav.svg" /> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+        </div>
+    </div>
+
+</main>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-slim.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
